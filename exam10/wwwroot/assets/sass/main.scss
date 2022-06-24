@@ -1,0 +1,174 @@
+header{
+    .header-nav{
+        background-image: url(/assets/img/home-image.jpg);
+        background-repeat: no-repeat;
+        background-position:center ;
+        position: relative;
+       min-height: 600px;
+        background-size: cover;
+        .navbar{
+            .container{
+                a{
+                    color: #fff;
+                }
+            }
+        }
+        .container{
+            padding: 2rem;
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                .text-box{
+                    position: absolute;
+                    
+                   h1{
+                       color: #fff;
+                   }
+                   p{
+                       color: #fff;
+                       width: 600px;
+                      
+                   }
+                   ul{
+                       li{
+                           color: #fff;
+                           list-style: none;
+                           text-decoration: none;
+                           margin-left: -20px;
+                       }
+                   }
+                   a{
+                       color: #fff;
+                       border: 1px solid #fff;
+                       border-radius: 20px;
+                   }
+                    
+    
+                }
+                .img-box{
+                    img{
+
+                        position: absolute;
+                        margin-bottom: 50px;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+main{
+    .product{
+        .container{
+            .row{
+                
+                .product-box{
+                    display: flex;
+                    .icon-box{
+                       
+
+
+                        i{
+                            align-items: center;
+                            font-size: 40px;
+                            color: #fd6a34;
+                            margin-right: 20px
+                        }
+                    }
+                    .description-box{
+                        p{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .info{
+        padding: 150px;
+        .container{
+            margin-bottom: 50px;
+            .row{
+                .img-left{
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                        
+                    }
+                   
+                }
+                .info-description{
+                    ul{
+                        li{
+                            i{
+                                margin-right: 10px;
+                            }
+                            list-style: none;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .screen{
+        background-color: rgb(245, 250, 253);
+       
+    }
+    .package{
+        .container{
+            .row{
+                display: flex;
+                
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+                .card{
+                    width: 70px;
+                    span{
+                        font-size: 30px;
+                    }
+                    ul{
+                        li{
+                            list-style: none;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .customer{
+        .container{
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: 113px;
+                margin-left: -15px;
+                
+               
+                .title-box{
+                    border: 1px solid rgb(245, 250, 253);
+                    border-radius: 20px;
+                    background-color:rgb(245, 250, 253);
+                    margin-bottom: 1rem;
+                    margin-right: 5px;
+                    width: 250px;
+
+                }
+                .row{
+                    
+                    .img-user{
+                        img{
+                            width: 96px;
+                            height: auto;
+                            border-radius: 50%;
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+﻿@model List<User>
+@using exam10.Models
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <a asp-controller="User" asp-action="Create">
+        Create
+    </a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+
+            <th scope="col">FullName</th>
+            <th scope="col">Title</th>
+            <th scope="col">Image</th>
+            <th scope="col">Position</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.FullName</td>
+                <td>@item.Title</td>
+                <td>@item.Image</td>
+                <td>@item.Position</td>
+
+                <td>
+                    @if (item.Title.Length > 30)
+                    {
+                        @(item.Title.Substring(0,30)+"...")
+                    }
+                    else
+                    {
+                        @item.Title
+                    }
+                </td>
+                <td>
+                    <a asp-controller="User" asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary">
+                        Update
+                    </a>
+                    <a asp-controller="User" asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger ">
+                        Delete
+                    </a>
+                </td>
+
+            </tr>
+        }
+
+    </tbody>
+</table>
